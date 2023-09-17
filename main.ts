@@ -39,7 +39,7 @@ let ip = 0
 serial.setBaudRate(BaudRate.BaudRate115200)
 serial.redirectToUSB()
 serial.writeLine("Welcome To RadLAN")
-serial.writeLine("The Radio Local Area Network Using the BBC Microbit")
+serial.writeLine("The Radio Local Area Network Using the BBC Microbit Radio")
 radio.setGroup(1)
 radio.setFrequencyBand(0)
 radio.setTransmitPower(7)
