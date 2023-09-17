@@ -29,9 +29,9 @@ input.onButtonPressed(Button.B, function () {
 })
 serial.onDataReceived(serial.delimiters(Delimiters.NewLine), function () {
     data = serial.readLine()
+    serial.writeString(serial.readLine())
     for (let index = 0; index < 5; index++) {
         radio.sendString(serial.readLine())
-        serial.writeString(serial.readLine())
     }
 })
 let data = ""
